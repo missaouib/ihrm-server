@@ -12,6 +12,7 @@
         <module>ihrm-model</module>
         <module>ihrm-company</module>
         <module>ihrm-eureka</module>
+        <module>ihrm-system</module>
     </modules>
     <packaging>pom</packaging>
 

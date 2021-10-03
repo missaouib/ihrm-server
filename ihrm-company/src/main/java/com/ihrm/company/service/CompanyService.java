@@ -4,7 +4,7 @@ import com.ihrm.common.entity.ResultCode;
 import com.ihrm.common.exception.CommonException;
 import com.ihrm.common.util.IdWorker;
 import com.ihrm.company.dao.CompanyDao;
-import com.ihrm.model.domain.Company;
+import com.ihrm.model.company.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
