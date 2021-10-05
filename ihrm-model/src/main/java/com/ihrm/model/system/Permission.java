@@ -56,5 +56,4 @@ public class Permission implements Serializable {
         this.description = description;
     }
 
-
 }

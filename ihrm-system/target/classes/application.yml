@@ -10,3 +10,8 @@ spring:
     password: 19911221htxA!
   jpa:
     database: mysql
+
+jwt:
+  config:
+    key: saas-ihrm
+    ttl: 360000

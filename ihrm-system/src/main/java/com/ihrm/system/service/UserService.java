@@ -26,14 +26,9 @@ public class UserService {
     @Autowired
     private IdWorker idWorker;
 
-//    public User findByMobileAndPassword(String mobile, String password) {
-//        User user = userDao.findByMobile(mobile);
-//        if (user != null && password.equals(user.getPassword())) {
-//            return user;
-//        } else {
-//            return null;
-//        }
-//    }
+    public User findByMobile(String mobile) {
+        return userDao.findByMobile(mobile);
+    }
 
     /**
      * 添加用户
@@ -97,6 +92,7 @@ public class UserService {
      */
     public void assignRoles(String userId, List<String> roleIds) {
         User user = userDao.findById(userId).get();
+        //2.设置用户的角色集合
         Set<Role> roles = new HashSet<>();
         for (String id : roleIds) {
             Role role = roleDao.findById(id).get();
@@ -147,5 +143,4 @@ public class UserService {
             }
         };
     }
-
 }
